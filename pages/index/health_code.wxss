@@ -1,0 +1,46 @@
+/* pages/index/health_code.wxss */
+
+page {
+    background: #f9f9f9;
+}
+
+.code_box {
+    width: 700rpx;
+    height: 990rpx;
+    margin: 25rpx auto;
+    background: #fff;
+    box-shadow: 0 5rpx 15rpx 0 rgba(102, 102, 102, 0.05);
+    text-align: center;
+}
+
+.code_box .code_box_tit {
+    padding: 176rpx 80rpx 0;
+    font-size: 36rpx;
+    color: #000;
+}
+
+.code_box .code_box_txt {
+    font-size: 32rpx;
+    color: #000;
+    margin-top: 115rpx;
+}
+
+.code_box .code_box_img {
+    width: 390rpx;
+    height: 390rpx;
+    margin: 26rpx auto;
+    background: antiquewhite;
+}
+
+.code_btn {
+    width: 690rpx !important;
+    height: 90rpx;
+    text-align: center;
+    line-height: 90rpx;
+    background: #046dfe;
+    border-radius: 45rpx;
+    font-size: 30rpx;
+    color: #fff;
+    margin: 35rpx auto 25rpx auto;
+    padding: 0;
+}

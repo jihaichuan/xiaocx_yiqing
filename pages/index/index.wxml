@@ -1,0 +1,119 @@
+<!--index.wxml-->
+<view class="bigbox">
+
+    <!-- 自定义标题 -->
+    <view class="page_title {{ is_nav?'page_title_active':'' }}" style="height: {{ title_height }}px;">
+        <view class="b page_txt" style="height: {{ title_height }}px; line-height: {{ title_line_height }}px">小熊猫登记小助手</view>
+    </view>
+    <!-- wx:if="{{ !is_nav }}" -->
+    <!-- <cover-view class="page_title_active" style="height: {{ title_height }}px;" wx:else>
+        <cover-view class="b page_txt" style="height: {{ title_height }}px; line-height: {{ title_line_height }}px">疫情工具</cover-view>
+    </cover-view> -->
+
+    <view class="b page_height" style="height: {{ title_height }}px"></view>
+
+    <!-- <view class="banner_bj">
+        <image src="../../img/home_banner.png"></image>
+    </view> -->
+    <view style="width:100%;height:240rpx;"></view>
+
+    <view class="user_box">
+
+        <button class="user_info" hover-class="btn-class" bindtap="go_user">
+            <view class="info_left">
+                <open-data class="user_avatar" type="userAvatarUrl"></open-data>
+                <!-- <view class="user_avatar">
+                <image></image>
+            </view> -->
+                <open-data class="name_txt b" type="userNickName"></open-data>
+            </view>
+            <view class="right_icon">
+                <image src="../../img/right.png"></image>
+            </view>
+        </button>
+
+    </view>
+
+    <view style="background:#fff;">
+
+        <view class="txt_tit b">我是负责人</view>
+
+        <button class="fun_li" hover-class="btn-class" bindtap="to_company" data-type="1">
+            <view class="fun_li_left">
+                <view class="left_icon">
+                    <image src="../../img/li_img1.png"></image>
+                </view>
+                <view class="left_texts">
+                    <view class="texts_tit b">{{ company_id==0?'创建企业':'管理企业' }}</view>
+                    <view class="texts_txt">收集员工健康数据，每天上报汇总</view>
+                </view>
+            </view>
+            <view class="fun_li_right">
+                <image src="../../img/right.png"></image>
+            </view>
+        </button>
+
+        <button class="fun_li" hover-class="btn-class" bindtap="to_company" data-type="2">
+            <view class="fun_li_left">
+                <view class="left_icon">
+                    <image src="../../img/li_img2.png"></image>
+                </view>
+                <view class="left_texts">
+                    <view class="texts_tit b">{{ store_id==0?'创建实体店':'管理实体店' }}</view>
+                    <view class="texts_txt">登记进入门店人员信息，可以统计导出</view>
+                </view>
+            </view>
+            <view class="fun_li_right">
+                <image src="../../img/right.png"></image>
+            </view>
+        </button>
+
+        <button class="fun_li"  hover-class="btn-class" bindtap="to_company" data-type="3">
+            <view class="fun_li_left">
+                <view class="left_icon">
+                    <image src="../../img/li_img3.png"></image>
+                </view>
+                <view class="left_texts">
+                    <view class="texts_tit b">{{ house_id==0?'创建小区':'管理小区' }}</view>
+                    <view class="texts_txt">住户进出小区实时登记</view>
+                </view>
+            </view>
+            <view class="fun_li_right">
+                <image src="../../img/right.png"></image>
+            </view>
+        </button>
+
+        <button hover-class="btn-class" open-type="share" class="share_box">
+            <view class="share_btn">
+                <view class="share_btn_icon">
+                    <image src="../../img/home_share.png"></image>
+                </view>
+                <view>分享给有需要的朋友</view>
+            </view>
+            <view class="share_box_txt">帮助企业、实体店和小区能够对疫情进行数字化管理</view>
+        </button>
+
+        <button class="float_share" hover-class="btn-class" open-type="contact">
+            <image src="../../img/customer_service.png"></image>
+        </button>
+
+        <button hover-class="btn-class" class="register_icon" bindtap="go_register">
+            <image src="../../img/register.png"></image>
+        </button>
+
+        <view class="btn_img" bindtap="go_xiaocx">
+            <image src="../../img/wx_btm.png"></image>
+        </view>
+        <view class="btn_txt" bindtap="go_xiaocx">小程序（北京）科技有限公司 技术支持</view>
+
+        <view class="mask" catchtouchmove="true" wx:if="{{ is_share }}"></view>
+        <view class="poupon_box" wx:if="{{ is_share }}">
+            <view class="box_poster">
+                <image show-menu-by-longpress src="../../img/poster.png"></image>
+            </view>
+            <view class="box_close" bindtap="close_share">
+                <image src="../../img/close.png"></image>
+            </view>
+        </view>
+    </view>
+</view>

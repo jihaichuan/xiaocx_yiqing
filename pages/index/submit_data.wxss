@@ -1,0 +1,18 @@
+/* pages/index/submit_data.wxss */
+@import "./create_enterprise.wxss";
+
+.tit_box {
+    padding: 40rpx 40rpx 30rpx 40rpx;
+    background: #e5f0fe;
+}
+
+.tit_box .txt1 {
+    font-size: 36rpx;
+    color: #2b5997;
+    margin-bottom: 10rpx;
+}
+
+.tit_box .txt2 {
+    font-size: 24rpx;
+    color: #fc5244;
+}

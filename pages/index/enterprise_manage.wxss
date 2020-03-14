@@ -1,0 +1,2 @@
+/* pages/index/enterprise_manage.wxss */
+@import"./physical_store.wxss"

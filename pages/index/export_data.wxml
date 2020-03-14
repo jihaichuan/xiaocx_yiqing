@@ -1,0 +1,30 @@
+<!--pages/index/export_data.wxml-->
+<view class="bigbox">
+
+    <view class="tit_list">
+        <view class="tit_txt1">日期</view>
+        <view class="tit_txt2">上报总数</view>
+        <view class="tit_txt3">操作</view>
+    </view>
+
+    <view class="data_list" wx:if="{{ date_list.length > 0 }}">
+        <button hover-class="btn-class" class="data_li" wx:for="{{ date_list }}" wx:key="kdl" bindtap="go_send" data-indx="{{ index }}">
+            <view class="li_txt1">{{ item.date }}</view>
+            <view class="li_txt2">{{ item.count }}人</view>
+            <view class="li_txt3">
+                <view class="b">导出</view>
+                <view class="export_icon">
+                    <image src="../../img/export_icon.png"></image>
+                </view>
+            </view>
+        </button>
+    </view>
+
+    <view class="no_data" wx:else>
+        <view class="no_data_img">
+            <image src="../../img/no_data.png"></image>
+        </view>
+        <view class="no_data_txt">暂无任何员工数据，可以通过分享登记码</view>
+        <button hover-class="btn-class" class="no_data_btn" bindtap="go_back">返回</button>
+    </view>
+</view>

@@ -1,0 +1,44 @@
+/* pages/index/submit_success.wxss */
+
+.bigbox {
+    padding-top: 55rpx;
+}
+
+.suc_img {
+    width: 460rpx;
+    height: 305rpx;
+    margin: 0 auto;
+}
+
+.suc_tit {
+    font-size: 34rpx;
+    color: #3d454c;
+    text-align: center;
+    margin-top: 60rpx;
+}
+
+.suc_txt {
+    font-size: 28rpx;
+    color: #2b5997;
+    text-align: center;
+    margin-top: 27rpx;
+}
+
+.suc_txt text {
+    color: #e6a23c;
+}
+
+.suc_btn {
+    width: 330rpx !important;
+    height: 80rpx;
+    text-align: center;
+    line-height: 80rpx;
+    margin: 0 auto;
+    background: #046dfe;
+    border: 2rpx solid #046dfe;
+    border-radius: 45rpx;
+    font-size: 30rpx;
+    color: #fff;
+    margin-top: 83rpx;
+    padding: 0;
+}

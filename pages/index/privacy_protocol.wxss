@@ -1,0 +1,33 @@
+/* pages/index/privacy_protocol.wxss */
+
+.bigbox {
+    padding: 30rpx 30rpx 100rpx;
+    color: #000;
+}
+
+.title {
+    text-align: center;
+    font-size: 38rpx;
+    margin-bottom: 50rpx;
+}
+
+.p_li {
+    text-indent: 65rpx;
+    font-size: 30rpx;
+    text-align: justify;
+    text-transform : uppercase;
+    letter-spacing: 1rpx;
+}
+.p_li text {
+    font-family: "PingFangSC-Regular"
+}
+
+.p_li+.p_li{
+    margin-top: 30rpx;
+}
+
+
+.lit_tit{
+    font-size: 35rpx;
+    margin: 40rpx 0 20rpx;
+}

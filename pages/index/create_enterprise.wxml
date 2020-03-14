@@ -1,0 +1,60 @@
+<!--pages/index/create_enterprise.wxml-->
+<view class="bigbox">
+    <form bindsubmit="submit_data">
+        <view class="inp_list">
+            <view class="inp_li">
+                <view class="li_left b li_before">{{ type_name }}名称</view>
+                <view class="li_right">
+                    <input class="input" name="name" value="{{ name }}" maxlength="30" placeholder="请填写{{ type_name }}名称" placeholder-class="place_txt"></input>
+                </view>
+            </view>
+            <view class="inp_li">
+                <view class="li_left b li_before">省市区</view>
+                <picker mode="region" bindchange="set_psa" name="psa" value="{{ psa }}">
+                    <view class="li_right">
+                        <view class="right_icon">
+                            <image src="../../img/right.png"></image>
+                        </view>
+                        <view class="place_txt {{ (psa.length ==0)?'':'active_txt' }}">{{ psa.length ==0?'请选择省/市/区': psa[0]+'/'+psa[1]+'/'+psa[2]}}</view>
+                    </view>
+                </picker>
+            </view>
+            <view class="inp_li">
+                <view class="li_left b li_before">详细地址</view>
+                <view class="li_right">
+                    <input class="input" name="address" value="{{ address }}" placeholder="请填写详细地址" placeholder-class="place_txt"></input>
+                </view>
+            </view>
+            <view class="inp_li">
+                <view class="li_left b li_before">负责人姓名</view>
+                <view class="li_right">
+                    <input class="input" name="real_name" value="{{ real_name }}" maxlength="15" placeholder="请填写负责人姓名" placeholder-class="place_txt"></input>
+                </view>
+            </view>
+            <view class="inp_li">
+                <view class="li_left b li_before">手机号码</view>
+                <view class="li_right">
+                    <button wx:if="{{ mobile==0 }}" class="send_code" loading="{{ loading }}" open-type="getPhoneNumber" bindgetphonenumber="get_mobile">获取手机号码</button>
+                    <input disabled="true" wx:if="{{ mobile }}" name="mobile" class="input" value="{{ mobile }}" type="number" placeholder="请填写手机号码" placeholder-class="place_txt"></input>
+                </view>
+            </view>
+            <!-- <view class="inp_li">
+                <view class="li_left b li_before">验证码</view>
+                <view class="li_right">
+                    <view class="{{ disabled?'send_codes':'send_code' }}" bindtap="send_code">{{ code }}</view>
+                    <input class="input_limit" type="number" placeholder="请输入验证码" placeholder-class="place_txt"></input>
+                </view>
+            </view> -->
+        </view>
+
+        <view class="select_box">
+            <view class="select_img" bindtap="check_select">
+                <image src="../../img/is_select.png" wx:if="{{ is_select }}"></image>
+                <image src="../../img/no_select.png" wx:else></image>
+            </view>
+            <view class="select_txt1">同意</view>
+            <view class="select_txt2" bindtap="go_privacy">《隐私协议》</view>
+        </view>
+        <button hover-class="btn-class" form-type="submit" class="opening">{{ price }}开通</button>
+    </form>
+</view>

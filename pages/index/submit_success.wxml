@@ -1,0 +1,10 @@
+<!--pages/index/submit_success.wxml-->
+<view class="bigbox">
+
+    <view class="suc_img"><image src="../../img/sub_success.png"></image></view>
+    <view class="suc_tit b">感谢您对疫情防控工作的支持</view>
+    <view class="suc_txt b">您是第 <text class="b">{{ id }}</text> 位疫情抗战人</view>
+
+    <button open-type="share" hover-class="btn-class" class="suc_btn">分享给朋友</button>
+
+</view>

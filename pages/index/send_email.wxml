@@ -1,0 +1,25 @@
+<!--pages/index/send_email.wxml-->
+<view class="bigbox">
+    <form bindsubmit="send_email">
+        <view class="tit_txt b">本次导出日期：{{ date }}，共{{ count }}条数据</view>
+        <view class="inp_box">
+            <input class="b" name="email" placeholder="请输入接收的邮件地址，如xxxx@126.com" placeholder-class="place_txt"></input>
+        </view>
+
+        <view class="tips_box">
+            <view class="tips_box_left">
+                <view class="tips_icon">
+                    <image src="../../img/tips_icon.png"></image>
+                </view>
+                <view>提示：</view>
+            </view>
+            <view class="tips_box_right">
+                <view style="margin-bottom:10rpx">如果5分钟内未收到该邮件，请
+                    <button class="call_btn" hover-class="none" open-type="contact">联系客服</button> 。</view>
+                <view>发送邮箱：yiqing@xiaocx.work 注意查收。</view>
+            </view>
+        </view>
+
+        <button form-type="submit" hover-class="btn-class" class="send_btn">发送</button>
+    </form>
+</view>

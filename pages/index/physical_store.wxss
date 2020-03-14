@@ -1,0 +1,94 @@
+/* pages/index/physical_store.wxss */
+
+page {
+    background: #f9f9f9;
+}
+
+.store_top {
+    background: #fff;
+}
+
+.page_tit {
+    width: 100%;
+    height: 70rpx;
+    line-height: 70rpx;
+    font-size: 26rpx;
+    color: #2b5997;
+    text-align: center;
+    background: #e5f0fe;
+}
+
+.page_tit text {
+    color: #e6a23c;
+}
+
+.store_name {
+    width: 690rpx;
+    margin: 0 auto;
+    border-bottom: 1rpx solid #dcdfe6;
+    background: #fff;
+    text-align: center;
+    padding: 40rpx 0;
+    font-size: 38rpx;
+}
+
+.people_list {
+    width: 670rpx;
+    margin: 0 auto;
+    padding: 50rpx 0;
+}
+
+.people_list .people_li {
+    display: flex;
+    align-items: center;
+}
+
+.people_list .people_li+.people_li {
+    padding-top: 30rpx;
+}
+
+.people_list .people_li .li_icon {
+    width: 40rpx;
+    height: 40rpx;
+    margin-right: 20rpx;
+}
+
+.people_list .people_li .li_txt {
+    font-size: 28rpx;
+    color: #303133;
+}
+
+.people_list .people_li .li_txt text {
+    color: #e6a23c;
+}
+
+.store_fun {
+    width: 690rpx;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.store_fun .store_li {
+    width: 330rpx;
+    height: 160rpx;
+    background: #fff;
+    box-shadow: 0 5rpx 15rpx 0 rgba(102, 102, 102, 0.05);
+    border-radius: 10rpx;
+    margin: 0;
+    margin-top: 30rpx;
+    text-align: center;
+    padding: 0;
+    font-size: 22rpx;
+    color: #323232;
+    font-weight: 400 !important;
+}
+
+.store_fun .store_li .li_icon {
+    width: 60rpx;
+    height: 60rpx;
+    margin: 0 auto;
+    padding-top: 33rpx;
+    margin-bottom: 13rpx;
+}

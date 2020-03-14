@@ -1,0 +1,76 @@
+<!--pages/index/residential_quarters.wxml-->
+<view class="bigbox">
+
+    <view class="store_top">
+        <view class="page_tit b">您是这次疫情抗战第
+            <text class="b">{{ user_id }}</text> 人</view>
+        <view class="store_name b">{{ info.name }}</view>
+        <view class="people_list">
+            <view class="people_li">
+                <view class="li_icon">
+                    <image src="../../img/icon4.png"></image>
+                </view>
+                <view class="li_txt b">今日新登记
+                    <text class="b">{{ info.day_new_count }}</text> 人</view>
+            </view>
+            <view class="people_li">
+                <view class="li_icon">
+                    <image src="../../img/icon2.png"></image>
+                </view>
+                <view class="li_txt b">今日出行登记
+                    <text class="b">{{ info.day_out_count }}</text> 人</view>
+            </view>
+            <view class="people_li">
+                <view class="li_icon">
+                    <image src="../../img/icon3.png"></image>
+                </view>
+                <view class="li_txt b">今日进入登记
+                    <text class="b">{{ info.day_enter_count }}</text> 人</view>
+            </view>
+            <view class="people_li">
+                <view class="li_icon">
+                    <image src="../../img/icon3.png"></image>
+                </view>
+                <view class="li_txt b">总登记
+                    <text class="b">{{ info.total_count }}</text> 次数</view>
+            </view>
+            <view class="people_li">
+                <view class="li_icon">
+                    <image src="../../img/icon3.png"></image>
+                </view>
+                <view class="li_txt b">总登记人数
+                    <text class="b">{{ info.count }}</text> 人</view>
+            </view>
+        </view>
+    </view>
+
+    <view class="store_fun" >
+        <button class="store_li" hover-class="btn-class" bindtap="down_qrcode">
+            <view class="li_icon">
+                <image src="../../img/store_icon5.png"></image>
+            </view>
+            <view class="b">打印出行登记码</view>
+        </button>
+        <button class="store_li" hover-class="btn-class" bindtap="down_qrcode2">
+            <view class="li_icon">
+                <image src="../../img/store_icon6.png"></image>
+            </view>
+            <view class="b">打印进入登记码</view>
+        </button>
+        <button class="store_li" hover-class="btn-class" bindtap="go_excel">
+            <view class="li_icon">
+                <image src="../../img/store_icon2.png"></image>
+            </view>
+            <view class="b">导出excel</view>
+        </button>
+
+        <button class="store_li" hover-class="btn-class" open-type="share">
+            <view class="li_icon">
+                <image src="../../img/store_icon4.png"></image>
+            </view>
+            <view class="b">分享给朋友</view>
+        </button>
+
+    </view>
+
+</view>

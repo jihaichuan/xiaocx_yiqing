@@ -1,0 +1,26 @@
+<!--pages/index/employee_list.wxml-->
+<view class="bigbox">
+
+
+    <view class="list_tit">
+        <view class="tit_left">姓名 | 手机号码</view>
+        <view class="tit_right">最新健康状态</view>
+    </view> 
+
+    <view class="people_list" wx:if="{{ user_list.length > 0 }}">
+        <view class="people_li" wx:for="{{ user_list }}" wx:key="kul">
+            <view class="li_left">{{ item.real_name }}  |  {{ item.mobile }}</view>
+            <view class="li_right_problem" wx:if="{{ (item.health_status == 2) && item.temperature }}">有咳嗽、干咳和胸闷等症状健康  {{ item.temperature }}℃</view>
+            <view class="li_right"  wx:if="{{ (item.health_status == 1) && item.temperature }}">健康  {{ item.temperature }}℃</view>
+            <view class="li_right"  wx:if="{{ (item.health_status == 0) && item.temperature }}">{{ item.temperature }}℃</view>
+        </view>
+    </view>
+
+    <view class="no_data" wx:else>
+        <view class="no_data_img"><image src="../../img/no_data.png"></image></view>
+        <view class="no_data_txt">暂无任何员工数据，可以通过分享登记码</view>
+        <button hover-class="btn-class" class="no_data_btn" bindtap="go_back">返回</button>
+    </view>
+    
+
+</view>

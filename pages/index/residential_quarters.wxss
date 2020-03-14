@@ -1,0 +1,2 @@
+/* pages/index/residential_quarters.wxss */
+@import"./physical_store.wxss"

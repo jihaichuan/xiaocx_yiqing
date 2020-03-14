@@ -1,0 +1,2 @@
+/* pages/index/user_info.wxss */
+@import"./create_enterprise.wxss"

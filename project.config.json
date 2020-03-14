@@ -1,0 +1,151 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"enhance": true,
+		"postcss": false,
+		"minified": false,
+		"newFeature": true,
+		"coverView": true,
+		"nodeModules": false,
+		"autoAudits": false,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
+		"uglifyFileName": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		},
+		"bundle": true,
+		"preloadBackgroundData": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.10.3",
+	"appid": "wx89b17c33a96efa79",
+	"projectname": "yiqing",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": 0,
+					"name": "创建企业",
+					"pathName": "pages/index/create_enterprise",
+					"query": "type=2",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "个人信息",
+					"pathName": "pages/index/user_info",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 2,
+					"name": "实体店管理",
+					"pathName": "pages/index/physical_store",
+					"query": "id=7",
+					"scene": null
+				},
+				{
+					"id": 3,
+					"name": "小区管理中心",
+					"pathName": "pages/index/residential_quarters",
+					"query": "id=8",
+					"scene": null
+				},
+				{
+					"id": 4,
+					"name": "企业管理中心",
+					"pathName": "pages/index/enterprise_manage",
+					"query": "id=1",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "提交健康数据",
+					"pathName": "pages/index/submit_data",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 6,
+					"name": "健康上报码",
+					"pathName": "pages/index/health_code",
+					"query": "img=https%3A%2F%2Fyiqing.xiaocx.org%2Fqrcode%2Fenterprise%2Fqrcode_url_6.png",
+					"scene": null
+				},
+				{
+					"id": 7,
+					"name": "发送邮件",
+					"pathName": "pages/index/send_email",
+					"query": "id=1&date=2020%E5%B9%B403%E6%9C%8811%E6%97%A5&create_date=2020-03-11&count=1",
+					"scene": null
+				},
+				{
+					"id": 8,
+					"name": "导出数据",
+					"pathName": "pages/index/export_data",
+					"query": "id=1",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "提交成功",
+					"pathName": "pages/index/submit_success",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 10,
+					"name": "员工列表",
+					"pathName": "pages/index/employee_list",
+					"query": "id=1",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "隐私协议",
+					"pathName": "pages/index/privacy_protocol",
+					"query": "img=https%3A%2F%2Fyiqing.xiaocx.org%2Fqrcode%2Fenterprise%2Fqrcode_url_6.png",
+					"scene": null
+				}
+			]
+		}
+	}
+}

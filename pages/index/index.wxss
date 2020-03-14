@@ -1,0 +1,227 @@
+/**index.wxss**/
+
+page {
+    background: url('http://xxm-cdn.xiaocx.org/page_bj.png') no-repeat;
+    background-size: 100% 560rpx;
+    background-attachment: fixed;
+}
+
+.bigbox {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow-y: scroll;
+}
+
+.banner_bj {
+    width: 100%;
+    height: 390rpx;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.user_box {
+    width: 100%;
+    background: #fff;
+    border-radius: 20rpx 20rpx 0 0;
+    padding-top: 20rpx;
+    padding-bottom: 40rpx;
+}
+
+.user_info {
+    width: 670rpx !important;
+    height: 160rpx;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0 5rpx 15rpx 0 rgba(102, 102, 102, 0.15);
+    border-radius: 15rpx;
+    margin-top: 14rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 36rpx;
+    color: #303133;
+    font-weight: 400;
+    padding: 0;
+    text-align: left;
+}
+
+.user_info .info_left {
+    display: flex;
+    align-items: center;
+    margin-left: 35rpx;
+}
+
+.user_info .info_left .user_avatar {
+    width: 110rpx;
+    height: 110rpx;
+    border-radius: 50%;
+    overflow: hidden;
+    background: antiquewhite;
+    margin-right: 26rpx;
+}
+
+.user_info .info_left .name_txt {
+    width: 400rpx;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.user_info .right_icon {
+    width: 14rpx;
+    height: 21rpx;
+    margin-right: 40rpx;
+}
+
+.txt_tit {
+    font-size: 34rpx;
+    color: #303133;
+    margin-left: 41rpx;
+    /* margin-top: 60rpx; */
+}
+
+.fun_li {
+    width: 670rpx !important;
+    padding: 30rpx 40rpx 30rpx 30rpx;
+    margin: 0 auto;
+    background: #f7f9fb;
+    border-radius: 15rpx;
+    margin-top: 25rpx;
+    margin-bottom: 10rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    font-weight: 400;
+}
+
+.fun_li .fun_li_left {
+    display: flex;
+    align-items: center;
+}
+
+.fun_li .fun_li_left .left_icon {
+    width: 90rpx;
+    height: 90rpx;
+    overflow: hidden;
+    border-radius: 50%;
+    background: antiquewhite;
+    margin-right: 30rpx;
+}
+
+.fun_li .fun_li_right {
+    width: 14rpx;
+    height: 21rpx;
+}
+
+.fun_li .fun_li_left .left_texts {
+    width: 420rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.fun_li .fun_li_left .left_texts .texts_tit {
+    font-size: 32rpx;
+    color: #303133;
+    margin-bottom: 5rpx;
+}
+
+.fun_li .fun_li_left .left_texts .texts_txt {
+    font-size: 24rpx;
+    color: #a0a8b8;
+}
+
+.share_box {
+    width: 670rpx !important;
+    height: 130rpx;
+    background: #f7f9fb;
+    border-radius: 15rpx;
+    margin: 30rpx auto;
+    padding: 0;
+}
+
+.share_box .share_btn {
+    width: 100%;
+    font-size: 28rpx;
+    color: #046dfe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25rpx;
+    margin-bottom: 9rpx;
+}
+
+.share_box .share_btn .share_btn_icon {
+    width: 31rpx;
+    height: 29rpx;
+    margin-right: 12rpx;
+}
+
+.share_box .share_box_txt {
+    font-size: 24rpx;
+    color: #909399;
+    text-align: center;
+}
+
+.float_share {
+    width: 101rpx !important;
+    height: 101rpx;
+    position: fixed;
+    bottom: 100rpx;
+    right: 25rpx;
+    background: none;
+    padding: 0 !important;
+    border-radius: 100%;
+}
+
+.float_share .img {
+    width: 100%;
+    height: 100%;
+}
+
+.register_icon {
+    width: 101rpx !important;
+    height: 101rpx;
+    position: fixed;
+    bottom: 230rpx;
+    right: 25rpx;
+    padding: 0 !important;
+    border-radius: 100%;
+}
+
+.btn_img {
+    width: 253rpx;
+    height: 36rpx;
+    margin: 90rpx auto 15rpx;
+}
+
+.btn_txt {
+    font-size: 22rpx;
+    color: #c0c4cc;
+    text-align: center;
+    padding-bottom: 17rpx;
+}
+
+.poupon_box {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 50%;
+    margin-top: -543.5rpx;
+    z-index: 999;
+}
+
+.poupon_box .box_poster {
+    width: 660rpx;
+    height: 1000rpx;
+    margin: 0 auto;
+}
+
+.poupon_box .box_close {
+    width: 90rpx;
+    height: 90rpx;
+    margin: 37rpx auto;
+}

@@ -1,0 +1,27 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/index/create_enterprise",
+        "pages/index/user_info",
+        "pages/user/index",
+        "pages/index/physical_store",
+        "pages/index/residential_quarters",
+        "pages/index/enterprise_manage",
+        "pages/index/submit_data",
+        "pages/index/submit_success",
+        "pages/index/employee_list",
+        "pages/index/export_data",
+        "pages/index/health_code",
+        "pages/index/send_email",
+        "pages/index/privacy_protocol"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "小熊猫登记小助手",
+        "navigationBarTextStyle": "black"
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json",
+    "navigateToMiniProgramAppIdList": ["wxbd84b137d77acee3"]
+}

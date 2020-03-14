@@ -1,0 +1,79 @@
+/* pages/index/send_email.wxss */
+
+.bigbox {
+    padding: 34rpx 40rpx 0;
+}
+
+.tit_txt {
+    font-size: 28rpx;
+    color: #303133;
+    margin-bottom: 30rpx;
+}
+
+.inp_box {
+    padding: 0 21rpx;
+    height: 120rpx;
+    background: #f9f9f9;
+    margin-bottom: 50rpx;
+}
+
+.inp_box input {
+    min-height:120rpx;
+    line-height: 120rpx; 
+    font-size: 38rpx;
+    color: #000;
+}
+
+.inp_box .place_txt {
+    font-size: 26rpx;
+    color: #909399;
+}
+
+.tips_box {
+    display: flex;
+}
+
+.tips_box .tips_box_left {
+    height: 30rpx;
+    display: flex;
+    align-items: center;
+    font-size: 26rpx;
+    color: #000;
+    padding-top: 3rpx;
+}
+
+.tips_box .tips_box_left .tips_icon {
+    width: 26rpx;
+    height: 26rpx;
+    margin-right: 10rpx;
+    /* margin-top: 3rpx; */
+}
+
+.tips_box .tips_box_right {
+    display: flex;
+    flex-direction: column;
+    font-size: 26rpx;
+    color: #000;
+}
+
+.tips_box .tips_box_right .call_btn {
+    display: inline;
+    padding: 0;
+    font-size: 26rpx;
+    color: #046dfe;
+    text-decoration: underline;
+    background: none;
+}
+
+.send_btn {
+    width: 670rpx !important;
+    height: 90rpx;
+    line-height: 90rpx;
+    text-align: center;
+    background: #046dfe;
+    border-radius: 45rpx;
+    font-size: 30rpx;
+    color: #fff;
+    margin-top: 100rpx;
+    padding: 0;
+}

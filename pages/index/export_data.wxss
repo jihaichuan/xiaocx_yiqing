@@ -1,0 +1,84 @@
+/* pages/index/export_data.wxss */
+
+page {
+    background: #f9f9f9;
+}
+.tit_list {
+    height: 83rpx;
+    line-height: 83rpx;
+    display: flex;
+    justify-content: space-between;
+    font-size: 26rpx;
+    color: #959a9f;
+    padding: 0 35rpx;
+    border-bottom: 1rpx solid #dedede;
+    background: #fff;
+}
+
+.tit_list .tit_txt1 {
+    width: 250rpx;
+    text-align: left;
+}
+
+.tit_list .tit_txt2 {
+    width: 160rpx;
+    text-align: center;
+}
+
+.tit_list .tit_txt3 {
+    width: 140rpx;
+    text-align: center;
+}
+
+.data_list {
+    padding: 0 35rpx;
+    background: #fff;
+}
+
+.data_list .data_li {
+    width: 100% !important;
+    height: 108rpx;
+    line-height: 108rpx;
+    display: flex;
+    justify-content: space-between;
+    font-size: 28rpx;
+    color: #000;
+    border-bottom: 1rpx solid #dedede;
+    background: #fff;
+    font-weight: 400;
+    padding: 0;
+}
+
+.data_list .data_li:last-child {
+    border: 0;
+}
+
+.data_list .data_li .li_txt1 {
+    width: 250rpx;
+    text-align: left;
+    font-size: 28rpx;
+    color: #000;
+}
+
+.data_list .data_li .li_txt2 {
+    width: 160rpx;
+    text-align: center;
+    font-size: 28rpx;
+    color: #000;
+}
+
+.data_list .data_li .li_txt3 {
+    width: 140rpx;
+    text-align: center;
+    font-size: 26rpx;
+    color: #046dfe;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.data_list .data_li .li_txt3 .export_icon{
+    width: 30rpx;
+    height: 28rpx;
+    margin-left: 10rpx;
+}

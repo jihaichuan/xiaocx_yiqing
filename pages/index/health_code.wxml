@@ -1,0 +1,5 @@
+<!--pages/index/health_code.wxml-->
+<view class="bigbox">
+    <image src="{{ img }}" class="code_box"></image>
+    <button hover-class="btn-class" loading="{{ loading }}" class="code_btn" bindtap="saveImg">下载</button>
+</view>

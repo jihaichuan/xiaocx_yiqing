@@ -1,0 +1,127 @@
+/* pages/index/create_enterprise.wxss */
+
+page {
+    background: #f9f9f9;
+}
+
+.inp_list {
+    padding: 0 40rpx;
+    background: #fff;
+}
+
+.inp_list .inp_li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 38rpx 0;
+}
+
+.inp_list .inp_li .li_left {
+    font-size: 30rpx;
+    color: #141414;
+}
+
+.inp_list .inp_li .li_before::before {
+    content: "*";
+    font-size: 30rpx;
+    color: #fc5244;
+}
+
+.place_txt {
+    font-size: 30rpx;
+    color: #c0c4cc;
+}
+
+.active_txt {
+    font-size: 30rpx;
+    color: #333;
+}
+
+.inp_list .inp_li .li_right {
+    text-align: right;
+    /* width: 70%; */
+    width: 500rpx;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.inp_list .inp_li .li_right .input {
+    font-size: 30rpx;
+    width: 100%;
+}
+
+.inp_list .inp_li .li_right .input_limit {
+    width: 200rpx;
+}
+
+.inp_list .inp_li .li_right .right_icon {
+    width: 14rpx;
+    height: 21rpx;
+    margin-left: 25rpx;
+}
+
+.inp_list .inp_li .li_right .send_code {
+    border: 1rpx solid #046dfe;
+    border-radius: 7rpx;
+    width: 190rpx !important;
+    height: 54rpx;
+    text-align: center;
+    line-height: 54rpx;
+    font-size: 26rpx;
+    color: #046dfe;
+    margin: 0;
+    margin-left: 40rpx;
+    padding: 0;
+    background: none;
+    font-weight: 400;
+}
+
+.inp_list .inp_li .li_right .send_codes {
+    border: 1rpx solid #c0c4cc;
+    color: #c0c4cc;
+    border-radius: 7rpx;
+    width: 170rpx;
+    height: 54rpx;
+    text-align: center;
+    line-height: 54rpx;
+    font-size: 26rpx;
+    margin-left: 40rpx;
+}
+
+.select_box {
+    margin: 63rpx 0 0 40rpx;
+    display: flex;
+    align-items: center;
+}
+
+.select_box .select_img {
+    width: 32rpx;
+    height: 32rpx;
+    margin-right: 20rpx;
+}
+
+.select_box .select_txt1 {
+    font-size: 26rpx;
+    color: #606266;
+}
+
+.select_box .select_txt2 {
+    font-size: 26rpx;
+    color: #046dfe;
+    text-decoration: underline;
+}
+
+.opening {
+    width: 670rpx !important;
+    height: 90rpx;
+    text-align: center;
+    line-height: 90rpx;
+    margin: 0 auto;
+    font-size: 30rpx;
+    color: #fff;
+    background: #046dfe;
+    border-radius: 45rpx;
+    margin-top: 70rpx;
+    padding: 0;
+}
